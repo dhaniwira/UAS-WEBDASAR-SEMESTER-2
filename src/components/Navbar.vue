@@ -1,43 +1,54 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from "vue";
 
-const isScrolled = ref(false)
-const isMenuOpen = ref(false)
+const isScrolled = ref(false);
+const isMenuOpen = ref(false);
 
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50
-}
+  isScrolled.value = window.scrollY > 50;
+};
 
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value
-}
+  isMenuOpen.value = !isMenuOpen.value;
+};
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
+  window.addEventListener("scroll", handleScroll);
+});
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <template>
   <header :class="['navbar', { 'navbar-scrolled': isScrolled }]">
     <div class="container navbar-container">
-      <router-link to="/" class="logo">
-        Pagi <span>Sore</span>
-      </router-link>
+      <router-link to="/" class="logo"> Pagi <span>Sore</span> </router-link>
 
       <button class="menu-toggle" @click="toggleMenu" aria-label="Toggle menu">
         <span class="hamburger"></span>
       </button>
 
       <nav :class="['nav-links', { 'nav-active': isMenuOpen }]">
-        <router-link to="/" class="nav-item" @click="isMenuOpen = false">Beranda</router-link>
-        <router-link to="/menu" class="nav-item" @click="isMenuOpen = false">Menu</router-link>
-        <router-link to="/about" class="nav-item" @click="isMenuOpen = false">Tentang Kami</router-link>
-        <router-link to="/contact" class="nav-item" @click="isMenuOpen = false">Lokasi</router-link>
-        <router-link to="/contact" class="btn btn-outline nav-cta" @click="isMenuOpen = false">Reservasi</router-link>
+        <router-link to="/" class="nav-item" @click="isMenuOpen = false"
+          >Beranda</router-link
+        >
+        <router-link to="/menu" class="nav-item" @click="isMenuOpen = false"
+          >Menu</router-link
+        >
+        <router-link to="/about" class="nav-item" @click="isMenuOpen = false"
+          >Tentang Kami</router-link
+        >
+        <router-link to="/contact" class="nav-item" @click="isMenuOpen = false"
+          >Lokasi</router-link
+        >
+        <router-link
+          to="/contact"
+          class="btn btn-outline nav-cta"
+          @click="isMenuOpen = false"
+          >Reservasi</router-link
+        >
       </nav>
     </div>
   </header>
@@ -96,7 +107,7 @@ onUnmounted(() => {
 }
 
 .nav-item::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -135,7 +146,7 @@ onUnmounted(() => {
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 2px;
@@ -144,8 +155,12 @@ onUnmounted(() => {
   transition: all 0.3s ease;
 }
 
-.hamburger::before { top: -8px; }
-.hamburger::after { top: 8px; }
+.hamburger::before {
+  top: -8px;
+}
+.hamburger::after {
+  top: 8px;
+}
 
 @media (max-width: 768px) {
   .menu-toggle {
@@ -165,7 +180,7 @@ onUnmounted(() => {
     justify-content: center;
     gap: 40px;
     transition: right 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
-    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
   }
 
   .nav-active {

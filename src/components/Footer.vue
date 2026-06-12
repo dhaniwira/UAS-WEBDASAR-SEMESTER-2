@@ -4,9 +4,12 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <h2 class="footer-logo">Pagi <span>Sore</span></h2>
-          <p class="footer-desc">Cita rasa Nusantara premium dengan dedikasi pada tradisi dan kualitas rasa yang tinggi dari sumatera barat.</p>
+          <p class="footer-desc">
+            Cita rasa Nusantara premium dengan dedikasi pada tradisi dan
+            kualitas rasa yang tinggi dari sumatera barat.
+          </p>
         </div>
-        
+
         <div class="footer-links">
           <h3>Eksplorasi</h3>
           <ul>
@@ -16,17 +19,24 @@
             <li><router-link to="/contact">Reservasi</router-link></li>
           </ul>
         </div>
-        
+
         <div class="footer-contact">
           <h3>Hubungi Kami</h3>
-          <p>Jl. Kesehatan Raya No.27, RT.3/RW.6, Bintaro, Kec. Pesanggrahan, Kota Jakarta<br> Selatan, Daerah Khusus Ibukota Jakarta 12330</p>
+          <p>
+            Jl. Kesehatan Raya No.27, RT.3/RW.6, Bintaro, Kec. Pesanggrahan,
+            Kota Jakarta<br />
+            Selatan, Daerah Khusus Ibukota Jakarta 12330
+          </p>
           <p>Telepon: +62 21 1234 5678</p>
           <p>Email: info@pagisore.com</p>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
-        <p>&copy; {{ new Date().getFullYear() }} Rumah Makan Pagi Sore. Hak Cipta Dilindungi.</p>
+        <p>
+          &copy; {{ new Date().getFullYear() }} Rumah Makan Pagi Sore. Hak Cipta
+          Dilindungi.
+        </p>
       </div>
     </div>
   </footer>
@@ -44,13 +54,16 @@
 
 /* Subtle pattern for footer */
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
   background-size: 20px 20px;
   pointer-events: none;
 }
@@ -80,7 +93,8 @@
   font-size: 1.05rem;
 }
 
-.footer-links h3, .footer-contact h3 {
+.footer-links h3,
+.footer-contact h3 {
   color: var(--color-gold);
   font-family: var(--font-sans);
   font-size: 1.1rem;
@@ -116,7 +130,7 @@
 .footer-bottom {
   text-align: center;
   padding-top: 30px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #8c9c93;
   font-size: 0.9rem;
 }

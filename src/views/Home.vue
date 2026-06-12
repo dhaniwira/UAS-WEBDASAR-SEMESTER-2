@@ -4,11 +4,21 @@
     <section class="hero fade-in">
       <div class="hero-content container">
         <span class="subtitle">Selamat Datang di</span>
-        <h1 class="hero-title">Rumah Makan<br>Pagi <span>Sore</span></h1>
-        <p class="hero-desc">Menyajikan mahakarya kuliner Minangkabau dengan kualitas premium dan resep warisan otentik sejak 1973.</p>
+        <h1 class="hero-title">Rumah Makan<br />Pagi <span>Sore</span></h1>
+        <p class="hero-desc">
+          Menyajikan mahakarya kuliner Minangkabau dengan kualitas premium dan
+          resep warisan otentik sejak 1973.
+        </p>
         <div class="hero-actions">
-          <router-link to="/menu" class="btn btn-primary">Lihat Menu</router-link>
-          <router-link to="/contact" class="btn btn-outline" style="color: white; border-color: white;">Reservasi Meja</router-link>
+          <router-link to="/menu" class="btn btn-primary"
+            >Lihat Menu</router-link
+          >
+          <router-link
+            to="/contact"
+            class="btn btn-outline"
+            style="color: white; border-color: white"
+            >Reservasi Meja</router-link
+          >
         </div>
       </div>
       <div class="hero-overlay"></div>
@@ -25,24 +35,44 @@
 
         <div class="featured-grid">
           <div class="card featured-card">
-            <div class="card-img" style="background-image: url('https://www.astronauts.id/blog/wp-content/uploads/2023/03/Resep-Rendang-Daging-Sapi-Untuk-Lebaran-Gurih-dan-Nikmat-1024x683.jpg');"></div>
+            <div
+              class="card-img"
+              style="
+                background-image: url(&quot;https://www.astronauts.id/blog/wp-content/uploads/2023/03/Resep-Rendang-Daging-Sapi-Untuk-Lebaran-Gurih-dan-Nikmat-1024x683.jpg&quot;);
+              "
+            ></div>
             <div class="card-content">
               <h3>Rendang Daging Spesial</h3>
-              <p>Diolah lambat selama 8 jam menggunakan rempah pilihan dan santan murni, menghasilkan tekstur daging yang empuk dengan bumbu yang meresap sempurna.</p>
+              <p>
+                Diolah lambat selama 8 jam menggunakan rempah pilihan dan santan
+                murni, menghasilkan tekstur daging yang empuk dengan bumbu yang
+                meresap sempurna.
+              </p>
             </div>
           </div>
-          
+
           <div class="card featured-card">
-            <div class="card-img" style="background-image: url('https://asset.kompas.com/crops/P0MLp44e6yBqpKaBBleIHI75uAY=/0x0:3565x2377/1200x800/data/photo/2025/12/14/693e5e2f3a16d.jpg');"></div>
+            <div
+              class="card-img"
+              style="
+                background-image: url(&quot;https://asset.kompas.com/crops/P0MLp44e6yBqpKaBBleIHI75uAY=/0x0:3565x2377/1200x800/data/photo/2025/12/14/693e5e2f3a16d.jpg&quot;);
+              "
+            ></div>
             <div class="card-content">
               <h3>Ayam Pop Original</h3>
-              <p>Kelezatan ayam kampung pilihan yang direbus dengan air kelapa dan bumbu khas, disajikan dengan sambal petai yang menggugah selera.</p>
+              <p>
+                Kelezatan ayam kampung pilihan yang direbus dengan air kelapa
+                dan bumbu khas, disajikan dengan sambal petai yang menggugah
+                selera.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="text-center mt-4">
-          <router-link to="/menu" class="btn btn-outline">Jelajahi Semua Menu</router-link>
+          <router-link to="/menu" class="btn btn-outline"
+            >Jelajahi Semua Menu</router-link
+          >
         </div>
       </div>
     </section>
@@ -52,17 +82,28 @@
       <div class="container experience-grid">
         <div class="experience-text">
           <span class="accent-text">Pengalaman</span>
-          <h2>Pelayanan Bintang Lima,<br>Kehangatan Tradisional</h2>
-          <p>Kami tidak sekadar menyajikan makanan, melainkan menghadirkan pengalaman bersantap yang tak terlupakan. Desain interior kami menggabungkan elemen tradisional Minang dengan kenyamanan modern kelas atas.</p>
+          <h2>Pelayanan Bintang Lima,<br />Kehangatan Tradisional</h2>
+          <p>
+            Kami tidak sekadar menyajikan makanan, melainkan menghadirkan
+            pengalaman bersantap yang tak terlupakan. Desain interior kami
+            menggabungkan elemen tradisional Minang dengan kenyamanan modern
+            kelas atas.
+          </p>
           <ul class="features-list">
             <li><i class="icon-check"></i> Ruang VIP Eksklusif</li>
             <li><i class="icon-check"></i> Kebersihan Bintang Lima</li>
             <li><i class="icon-check"></i> Pelayanan Ramah & Profesional</li>
           </ul>
-          <router-link to="/about" class="btn btn-gold mt-4">Kisah Kami</router-link>
+          <router-link to="/about" class="btn btn-gold mt-4"
+            >Kisah Kami</router-link
+          >
         </div>
         <div class="experience-image">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Interior Pagi Sore" class="img-fluid rounded-lg shadow-lg">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            alt="Interior Pagi Sore"
+            class="img-fluid rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>
@@ -89,7 +130,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(26, 6, 6, 0.9) 0%, rgba(26, 6, 6, 0.6) 50%, rgba(26, 6, 6, 0.3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(26, 6, 6, 0.9) 0%,
+    rgba(26, 6, 6, 0.6) 50%,
+    rgba(26, 6, 6, 0.3) 100%
+  );
   z-index: 1;
 }
 
@@ -185,7 +231,7 @@
 .experience {
   background-color: var(--color-white);
   padding: 100px 0;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .experience-grid {
@@ -214,7 +260,7 @@
 }
 
 .features-list li::before {
-  content: '✓';
+  content: "✓";
   color: var(--color-gold);
   font-weight: bold;
   font-size: 1.2rem;

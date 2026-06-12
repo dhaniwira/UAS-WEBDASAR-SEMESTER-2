@@ -3,7 +3,10 @@
     <div class="page-header">
       <div class="container text-center">
         <h1>Lokasi & Reservasi</h1>
-        <p>Kunjungi restoran kami atau lakukan reservasi untuk pengalaman bersantap yang eksklusif.</p>
+        <p>
+          Kunjungi restoran kami atau lakukan reservasi untuk pengalaman
+          bersantap yang eksklusif.
+        </p>
       </div>
     </div>
 
@@ -16,15 +19,21 @@
             <div class="icon">📍</div>
             <div>
               <h3>Alamat Restoran</h3>
-              <p>Jl. Kesehatan Raya No.27 Sektor 1, RT.3/RW.6, Bintaro,<br> Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12330</p>
+              <p>
+                Jl. Kesehatan Raya No.27 Sektor 1, RT.3/RW.6, Bintaro,<br />
+                Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota
+                Jakarta 12330
+              </p>
             </div>
           </div>
-          
+
           <div class="info-item">
             <div class="icon">🕒</div>
             <div>
               <h3>Jam Operasional</h3>
-              <p>Setiap Hari: 10:00 - 22:00 WIB<br>Libur Nasional tetap buka</p>
+              <p>
+                Setiap Hari: 10:00 - 22:00 WIB<br />Libur Nasional tetap buka
+              </p>
             </div>
           </div>
 
@@ -32,7 +41,7 @@
             <div class="icon">📞</div>
             <div>
               <h3>Kontak</h3>
-              <p>Telepon: +62 21 1234 5678<br>Email: rsv@pagisore.com</p>
+              <p>Telepon: +62 21 1234 5678<br />Email: rsv@pagisore.com</p>
             </div>
           </div>
 
@@ -51,33 +60,53 @@
         <!-- Reservation Form -->
         <div class="reservation-form card fade-in">
           <h2>Reservasi Meja</h2>
-          <p class="mb-4 text-light">Pastikan meja Anda tersedia dengan melakukan reservasi sebelumnya, terutama untuk ruang VIP.</p>
-          
+          <p class="mb-4 text-light">
+            Pastikan meja Anda tersedia dengan melakukan reservasi sebelumnya,
+            terutama untuk ruang VIP.
+          </p>
+
           <form @submit.prevent="submitForm">
             <div class="form-group">
               <label for="name">Nama Lengkap</label>
-              <input type="text" id="name" class="form-control" placeholder="Masukkan nama Anda" required>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Masukkan nama Anda"
+                required
+              />
             </div>
-            
+
             <div class="form-row">
               <div class="form-group">
                 <label for="phone">Nomor Telepon</label>
-                <input type="tel" id="phone" class="form-control" placeholder="Contoh: 0812..." required>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-control"
+                  placeholder="Contoh: 0812..."
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="email">Email (Opsional)</label>
-                <input type="email" id="email" class="form-control" placeholder="email@domain.com">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="email@domain.com"
+                />
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="date">Tanggal</label>
-                <input type="date" id="date" class="form-control" required>
+                <input type="date" id="date" class="form-control" required />
               </div>
               <div class="form-group">
                 <label for="time">Waktu</label>
-                <input type="time" id="time" class="form-control" required>
+                <input type="time" id="time" class="form-control" required />
               </div>
             </div>
 
@@ -95,10 +124,17 @@
 
             <div class="form-group">
               <label for="notes">Catatan Tambahan (Opsional)</label>
-              <textarea id="notes" class="form-control" rows="3" placeholder="Alergi, permintaan khusus, dll."></textarea>
+              <textarea
+                id="notes"
+                class="form-control"
+                rows="3"
+                placeholder="Alergi, permintaan khusus, dll."
+              ></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100">Kirim Permintaan Reservasi</button>
+            <button type="submit" class="btn btn-primary w-100">
+              Kirim Permintaan Reservasi
+            </button>
           </form>
         </div>
       </div>
@@ -108,8 +144,10 @@
 
 <script setup>
 const submitForm = () => {
-  alert('Permintaan reservasi Anda telah terkirim. Staf kami akan segera menghubungi Anda untuk konfirmasi.')
-}
+  alert(
+    "Permintaan reservasi Anda telah terkirim. Staf kami akan segera menghubungi Anda untuk konfirmasi.",
+  );
+};
 </script>
 
 <style scoped>
@@ -118,13 +156,13 @@ const submitForm = () => {
   color: var(--color-white);
   padding: 160px 0 80px;
   position: relative;
-  background-image: url('https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-image: url("https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
   background-size: cover;
   background-position: center;
 }
 
 .page-header::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(31, 61, 44, 0.85);
